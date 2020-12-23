@@ -198,6 +198,7 @@ export default class Row extends Component {
       Animated.timing(this._animatedLocation, {
         toValue: nextLocation,
         duration: 300,
+        useNativeDriver: false
       }).start(() => {
         this._isAnimationRunning = false;
       });
